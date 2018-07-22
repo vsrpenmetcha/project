@@ -3,7 +3,7 @@ def main():
     list = [1, 2, 14, 22, 12, 9]
     for l in list:
         print l
-  
+    
     words = ['cat', 'card', 'apple', 'laptop', 'on']
     for w in words:
          print w, len(w)
@@ -16,13 +16,3 @@ def main():
 if __name__ == ' __main__':
     main()
 
-    
-
-
-
-
-
- 
-    
-
-        
