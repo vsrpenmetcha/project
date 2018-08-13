@@ -66,3 +66,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 10. $ git clone https://github.com/vsrpenmetcha/project temp/
 
+11. git remote -v
+12. git branch -v
+13. git pull
+14. git push origin master
