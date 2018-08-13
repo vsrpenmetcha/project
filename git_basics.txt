@@ -1,0 +1,68 @@
+1. git version
+git version 2.18.0.windows.1
+
+2. Your Identity
+The first thing you should do when you install Git is to set your user name and email address. 
+This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+Again, you need to do this only once if you pass the --global option, 
+because then Git will always use that information for anything you do on that system. 
+If you want to override this with a different name or email address for specific projects, 
+you can run the command without the --global option when you’re in that project.
+
+Many of the GUI tools will help you do this when you first run them.
+
+3.Checking Your Settings
+$git config --list
+
+user.email=vsrpenmetcha@gmail.com
+user.name=Venkata Penmetcha
+
+4. Initilialize git (initiliazed @ c:/work/python)
+
+$ git init
+Initialized empty Git repository in C:/work/python/.git/
+
+ -> goto C:/work/python, run ls -la the you will see
+
+drwxr-xr-x 1 pvsri 197609    0 Aug 12 19:39 .git/ 
+
+ -> .git folder has the required code to keep track of the files
+
+ -> to untrack the files , remove .git folder
+
+5. git help commands: 
+   For example, you can get the manpage help for the git config command by running
+
+  $ git help config
+
+5. 
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        git_basics.txt
+        ignorefile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ git_basics.txt, ignorefile.txt are untracked files
+
+6. to ignore few files from git status, create .gitignore file and add file names that you want to ignore it
+
+7.  git add .gitignore
+    git add -A -> to all files to staging area
+
+8. $ git reset .gitignore   -> git reset command will move that file form staging area to untracked file.
+
+9. $ git commit -m "adding any file in .gitignore will ignore from git status "
+
+10. $ git clone https://github.com/vsrpenmetcha/project temp/
+
